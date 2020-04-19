@@ -1,0 +1,47 @@
+{
+	"name": "synapse-executor",
+	"displayName": "synapse-execute",
+	"description": "Synapse Executor",
+	"version": "0.0.1",
+	"publisher": "nexure",
+	"repository": "",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.synapseExecute",
+				"title": "Synapse Execute"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"@types/node": "^8.10.25",
+		"tslint": "^5.11.0",
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.22"
+	},
+	"dependencies": {
+		"websocket": "^1.0.28",
+		"websocket-as-promised": "^0.9.0"
+	},
+	"__metadata": {
+		"id": "91234170-b65a-4e46-8a88-a411b0bdc3b9",
+		"publisherId": "58527c7c-6660-41cc-8f8f-c6ced30152af",
+		"publisherDisplayName": "nexure"
+	}
+}
